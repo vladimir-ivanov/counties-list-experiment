@@ -1,0 +1,10 @@
+.countries-list {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.countries-list button {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}

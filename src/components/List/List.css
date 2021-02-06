@@ -1,0 +1,7 @@
+.list {
+  padding: 10px;
+  font-size: 1.1em;
+  background: #cfd8dc;
+  overflow-y: auto;
+  height: 100%;
+}

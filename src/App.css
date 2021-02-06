@@ -1,0 +1,32 @@
+@import "./cssResets.css";
+/*just a temp thing to make things slighly neater*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,latin-ext,greek-ext,greek,vietnamese,cyrillic,cyrillic-ext);
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eceff1;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #607d8b;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #546e7a;
+}
+
+.app {
+    font-family: "Roboto", serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
