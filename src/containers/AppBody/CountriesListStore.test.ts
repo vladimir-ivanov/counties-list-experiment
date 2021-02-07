@@ -30,16 +30,16 @@ describe('CountriesListStore', () => {
   ]);
 
 
-  describe('execute()', () => {
+  describe('getUpdatedCountries()', () => {
     describe('withNoTermOrSort', () => {
       it('should return the input list as is', () => {
-        expect(countryListStore.execute()).toMatchSnapshot();
+        expect(countryListStore.getUpdatedCountries()).toMatchSnapshot();
       });
     });
 
     describe('withTermNoSort', () => {
       it('should return the input list matches only', () => {
-        expect(countryListStore.setTerm('u').execute()).toMatchSnapshot();
+        expect(countryListStore.setTerm('u').getUpdatedCountries()).toMatchSnapshot();
       });
     });
 
@@ -52,7 +52,7 @@ describe('CountriesListStore', () => {
               field: SortBy.Population,
               direction: SortDirection.Desc
             })
-            .execute()
+            .getUpdatedCountries()
         ).toMatchSnapshot();
       });
     });
@@ -66,7 +66,7 @@ describe('CountriesListStore', () => {
               direction: SortDirection.Desc
             })
             .setTerm('u')
-            .execute()
+            .getUpdatedCountries()
         ).toMatchSnapshot();
       });
     });

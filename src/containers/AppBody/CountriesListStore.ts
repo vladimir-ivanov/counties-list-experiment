@@ -22,7 +22,7 @@ export class CountriesListStore {
     return this;
   };
 
-  execute = () => {
+  getUpdatedCountries = () => {
     let countries =  this.countriesList;
 
     if (this.sortField) {

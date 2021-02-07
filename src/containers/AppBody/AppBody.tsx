@@ -27,14 +27,14 @@ const AppBody: FC = () => {
 
   const onCountriesSorterChange = useCallback((sortField: SortField) => {
     setDisplayCountries(
-      countriesListStore.current?.setSortField(sortField).execute() as Country[]
+      countriesListStore.current?.setSortField(sortField).getUpdatedCountries() as Country[]
     );
   }, []);
 
   // todo - add debounce
   const onCountriesFilterChange = useCallback((term: string) => {
     setDisplayCountries(
-      countriesListStore.current?.setTerm(term).execute() as Country[]
+      countriesListStore.current?.setTerm(term).getUpdatedCountries() as Country[]
     );
   }, []);
 

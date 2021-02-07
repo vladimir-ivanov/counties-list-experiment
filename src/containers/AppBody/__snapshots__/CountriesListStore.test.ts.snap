@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CountriesListStore execute() withNoTermOrSort should return the input list as is 1`] = `
+exports[`CountriesListStore getUpdatedCountries() withNoTermOrSort should return the input list as is 1`] = `
 Array [
   Object {
     "alpha3Code": "AFG",
@@ -29,7 +29,7 @@ Array [
 ]
 `;
 
-exports[`CountriesListStore execute() withSortAndTerm should return the input list sorted by population 1`] = `
+exports[`CountriesListStore getUpdatedCountries() withSortAndTerm should return the input list sorted by population 1`] = `
 Array [
   Object {
     "alpha3Code": "USA",
@@ -50,7 +50,7 @@ Array [
 ]
 `;
 
-exports[`CountriesListStore execute() withSortNoTerm should return the input list sorted by population 1`] = `
+exports[`CountriesListStore getUpdatedCountries() withSortNoTerm should return the input list sorted by population 1`] = `
 Array [
   Object {
     "alpha3Code": "USA",
@@ -68,18 +68,10 @@ Array [
     "name": "UK",
     "population": 2,
   },
-  Object {
-    "alpha3Code": "AFG",
-    "capital": "Kabul",
-    "currencies": Array [],
-    "languages": Array [],
-    "name": "Afghanistan",
-    "population": 1,
-  },
 ]
 `;
 
-exports[`CountriesListStore execute() withTermNoSort should return the input list matches only 1`] = `
+exports[`CountriesListStore getUpdatedCountries() withTermNoSort should return the input list matches only 1`] = `
 Array [
   Object {
     "alpha3Code": "GBR",
